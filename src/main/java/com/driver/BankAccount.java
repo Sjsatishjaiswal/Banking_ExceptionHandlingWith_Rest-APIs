@@ -6,35 +6,22 @@ public class BankAccount {
     private double balance;
     private double minBalance;
 
-    public String getName() {
-        return name;
+    public BankAccount(String name, double balance, double minBalance) {
+        this.name = name;
+        this.balance = balance;
+        this.minBalance = minBalance;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getName() {
+        return name;
     }
 
     public double getBalance() {
         return balance;
     }
 
-    public void setBalance(double balance) {
-        this.balance = balance;
-    }
-
     public double getMinBalance() {
         return minBalance;
-    }
-
-    public void setMinBalance(double minBalance) {
-        this.minBalance = minBalance;
-    }
-
-    public BankAccount(String name, double balance, double minBalance) {
-        this.name = name;
-        this.balance = balance;
-        this.minBalance = minBalance;
-
     }
 
     public String generateAccountNumber(int digits, int sum) throws Exception{
